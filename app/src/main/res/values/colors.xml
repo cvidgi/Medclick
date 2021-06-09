@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Main_appcolor">#26C6DA</color>
+    <color name="Second_appcolor">#8CE1EB</color>
+    <color name="Third_appcolor">#E3F8FA</color>
+    <color name="Main_lighter">#05D7F1</color>
+    <color name="btnStartColor">#03CFE9</color>
+    <color name="btn_text">#29B6C8</color>
+    <color name="btnEndColor">#3391DD</color>
+    <color name="bg_btn2">#F6F6F6</color>
+    <color name="back_btn">#FFFDFD</color>
+    <color name="thin_text">#434343</color>
+    <color name="thin_text_2">#3C3C3C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_min">#FAFAFA</color>
+    <color name="radio_button_color">#2196F3</color>
+    <color name="back_of_my_message">#E3F8FA</color>
+    <color name="back_of_message">#F8F8F7</color>
+    <color name="red">#F44336</color>
+    <color name="grey">#64686D</color>
+    <color name="grey_shadow">#2364686D</color>
+    <color name="background_chat">#FCFCFC</color>
+    <color name="background_main_page">#FAFAFA</color>
+    <color name="Без_тени">#1A26C6DA</color>
+    <color name="red_videochat">#FF4646</color>
+    <color name="Фон">#B3000000</color>
+    <color name="В_консультации">#0EA2B5</color>
+</resources>

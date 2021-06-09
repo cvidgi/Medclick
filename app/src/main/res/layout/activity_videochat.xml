@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_min"
+    tools:context=".videochat">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/your_shape"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:elevation="3dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/your_window"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/back_videochat"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back_videochat"
+            android:elevation="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_left_arrow_1" />
+
+        <ImageView
+            android:id="@+id/switch_cam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="63dp"
+            android:background="@drawable/switch_camera"
+            android:elevation="5dp"
+            android:paddingStart="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/your_shape"
+            app:layout_constraintTop_toTopOf="@+id/your_shape"
+            app:srcCompat="@drawable/ic_cameraswitch_black_24dp_2" />
+
+        <ImageView
+            android:id="@+id/cam_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/camera_videochat"
+            android:paddingStart="13dp"
+            android:paddingTop="13dp"
+            android:paddingEnd="13dp"
+            android:paddingBottom="13dp"
+            android:elevation="5dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/call_end_videochat"
+            app:srcCompat="@drawable/ic_photo_camera_black_24dp_1" />
+
+        <ImageView
+            android:id="@+id/call_end_videochat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/call_end"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:elevation="5dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_call_end_black_24dp__1__1" />
+
+        <ImageView
+            android:id="@+id/mic_unmute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/camera_videochat"
+            android:paddingStart="13dp"
+            android:paddingTop="13dp"
+            android:paddingEnd="13dp"
+            android:elevation="5dp"
+            android:paddingBottom="13dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/call_end_videochat"
+            app:srcCompat="@drawable/ic_mic_black_24dp_1" />
+
+        <ImageView
+            android:id="@+id/cum_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/cam_videochat_off"
+            android:elevation="5dp"
+            android:paddingStart="13dp"
+            android:paddingTop="13dp"
+            android:paddingEnd="13dp"
+            android:paddingBottom="13dp"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/call_end_videochat"
+            app:srcCompat="@drawable/ic_no_photography_black_24dp_1" />
+
+        <ImageView
+            android:id="@+id/mic_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/cam_videochat_off"
+            android:elevation="5dp"
+            android:paddingStart="13dp"
+            android:paddingTop="13dp"
+            android:paddingEnd="13dp"
+            android:paddingBottom="13dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/call_end_videochat"
+            app:srcCompat="@drawable/ic_mic_black_24dp_1__1_" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

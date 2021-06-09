@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:elevation="4dp"
+        android:background="@drawable/flow_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/manrope_medium"
+            android:text="@string/Авторизация"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/manrope_light"
+            android:text="@string/Выбор_способа"
+            android:textColor="@color/thin_text"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/next_btn1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/elm_view"
+                android:elevation="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:cornerRadius="30dp"
+                tools:ignore="MissingConstraints"
+                tools:targetApi="lollipop" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/elm_view"
+                android:elevation="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:cornerRadius="30dp"
+                tools:targetApi="lollipop" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                app:srcCompat="@drawable/ic_chat_1" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                app:srcCompat="@drawable/ic_gos_logo"
+                tools:targetApi="lollipop" />
+
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="140dp"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                tools:targetApi="lollipop">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableStart="?android:attr/listChoiceIndicatorSingle"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/manrope_regular"
+                    android:paddingStart="12dp"
+                    android:paddingTop="65dp"
+                    android:text="@string/ГосУслуги"
+                    android:textColor="@color/black"
+                    tools:targetApi="lollipop" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="19dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableStart="?android:attr/listChoiceIndicatorSingle"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/manrope_regular"
+                    android:paddingStart="12dp"
+                    android:paddingTop="65dp"
+                    android:text="@string/Телефон"
+
+
+                    android:textColor="@color/black"
+                    tools:targetApi="lollipop" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/back_btn1"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn1"
+            android:drawableLeft="@drawable/ic_back_new"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/Назад"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textSize="15sp"
+            app:backgroundTint="@color/back_btn"
+            app:backgroundTintMode="src_over"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/next_btn1"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn1"
+            android:drawableEnd="@drawable/ic_next"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/Далее"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:backgroundTint="@color/btnStartColor"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
